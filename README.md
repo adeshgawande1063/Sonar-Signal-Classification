@@ -28,7 +28,26 @@ The repository contains a Jupyter Notebook for the project workflow and a CSV da
 3. Open `Sonar_signal_classification.ipynb` in Jupyter Notebook or Google Colab.
 4. Run the notebook cells in order.
 
-## Objective
+
+## Model Evaluation
+
+The model was evaluated on a held-out test set of 42 samples.
+
+| Metric | Test Result |
+|---|---:|
+| Accuracy | 92.86% |
+| Macro F1-score | 0.93 |
+| Weighted F1-score | 0.93 |
+
+### Class-wise Results
+
+| Class | Precision | Recall | F1-score |
+|---|---:|---:|---:|
+| 0 | 1.00 | 0.85 | 0.92 |
+| 1 | 0.88 | 1.00 | 0.94 |
+
+*Note: Results are from the current train/test split. Further validation is needed to assess generalization.*
+
 
 The objective is to investigate how machine learning can be applied to sonar signal data for classification.
 
